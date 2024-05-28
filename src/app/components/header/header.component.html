@@ -1,0 +1,2 @@
+<app-form *ngIf="newUser" (submitData)="showUserData($event)" ></app-form>
+<span *ngIf="showTable" ><app-table [userDataTable]="userData" (addUser)="addNewUserData($event)" ></app-table></span>
